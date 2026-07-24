@@ -1,8 +1,5 @@
-# EcoThread (simple version)
+# EcoThread 
 
-Same 4 screens, same design — just simpler code. No design-token file, no
-style-object props, just plain Tailwind classes directly in each component.
-Easier to read, easier to explain, easier to tweak.
 
 ## Layout
 
@@ -35,8 +32,3 @@ npm run dev
 
 Open the printed `http://localhost:5173/` link.
 
-## Flow
-
-Home → tap photo box → Report → tap "Sell it"/"Donate" → Places → back
-arrow returns to Report → back arrow returns to Home. Market/Profile are
-plain tab switches.
