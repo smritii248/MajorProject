@@ -37,3 +37,17 @@ if __name__ == "__main__":
     print("Taşkın & Nergis (2017) is cradle-to-grave and includes use-phase")
     print("emissions (washing/drying), which their study found accounts for")
     print("~37.4% of total footprint — this explains the deviation above.")
+
+    print("\n=== RQ1 Check 3: Production-only benchmark comparison ===")
+    # Source: Carbon-water-energy footprint of dyed cotton fabric production in China
+    # (cradle-to-gate: cotton cultivation + fabric production + dyeing)
+    # 15,627.20 kg CO2eq per tonne of dyed cotton fabric = 15.63 kg CO2eq/kg
+    production_benchmark_co2_per_kg = 15.63
+
+    validate(8.3, production_benchmark_co2_per_kg,
+             "WRAP cotton production CO2e/kg vs. China dyed-fabric cradle-to-gate study")
+
+    print("\nNote: Both figures are production-phase only (no use-phase or")
+    print("end-of-life). Deviation here reflects real variation between")
+    print("WRAP's UK-based data and a China-based dyeing-inclusive study —")
+    print("not a scope mismatch, unlike Check 2.")
